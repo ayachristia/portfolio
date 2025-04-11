@@ -1,0 +1,26 @@
+.heroEl{
+    height: 95vh;
+    text-align: center;
+    &__headline{
+        font-size: 2rem;
+        margin-top: 22%;
+    }
+    &__intro{
+        font-size: 1rem;
+        display: block;
+    }
+    &__person{
+        font-size: 1.8rem;
+        display: block;
+    }
+    &__arrowdown{
+        margin-top:20%;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: .5rem 2.5rem;
+    }
+    &__arrowdown span{
+        display: block;
+    }
+}
