@@ -1,17 +1,50 @@
 .heroEl{
     height: 95vh;
-    text-align: center;
+    // text-align: center;
     &__headline{
         font-size: 2rem;
-        margin-top: 22%;
+        margin-top: 10%;
     }
-    &__intro{
-        font-size: 1rem;
+    &__frontdev{
+        font-size: 2.2rem;
         display: block;
+        text-transform: uppercase;
+        font-weight: bolder;
     }
-    &__person{
-        font-size: 1.8rem;
-        display: block;
+    &__frontdev--front{
+        color: rgb(192, 2, 192);
+        line-height: 0.3;
+    }
+    &__frontdev--dev{
+        margin-left: .8rem;
+    }
+    &__about{
+        line-height: 1.5rem;
+        width: 96%;
+        margin-bottom: 1.2rem;
+    }
+    &__focus{
+        width: 100%;
+    }
+    &__focus th{
+       text-align: center;
+       font-size: 1.4rem;
+       color: rgb(192, 2, 192);
+       padding-bottom: .4rem;
+    }
+    &__focus td{
+       text-align: center;
+    }
+    &__imgcontainer{
+        width: 100%;
+        height: 200px;
+    }
+    &__portrait{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        filter: brightness(80%);
+        clip-path: polygon(0 0, 100% 10%, 80% 100%, 40% 100%);
     }
     &__arrowdown{
         margin-top:20%;
