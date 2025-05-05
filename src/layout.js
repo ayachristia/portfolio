@@ -1,4 +1,4 @@
-import backgroundVid from "./img/Particles_Rain_Background.mp4"
+import backgroundVid from "./img/vecteezy_animated-flying-through-the-stars-and-blue-nebula-in-space_8078506.mp4"
 
 export default function layout() {
     const body = document.querySelector('body')

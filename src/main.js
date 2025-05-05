@@ -3,6 +3,8 @@ import layout from './layout';
 import navigation from './components/navigation';
 import hero from './components/hero';
 import splash from './components/splash';
+import test from './components/test';
+
 // window.addEventListener('load', () => {
 //     setTimeout(() => {
 //         layout();
@@ -11,9 +13,10 @@ import splash from './components/splash';
 
 // });
 layout()
-
 document.querySelector('header').append(navigation())
 document.querySelector('main').append(hero())
-splash()
+// splash() 
+// test()
+
 
 

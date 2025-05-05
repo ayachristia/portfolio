@@ -43,6 +43,7 @@ export default function splash() {
 
             setTimeout(() => {
                 introEl.style.bottom = '-100vh'
+                introEl.classList.add('fadeback')
             }, 2000)
 
         })
