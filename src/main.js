@@ -1,9 +1,11 @@
 import './styles/style.scss';
 import layout from './layout';
-import navigation from './components/navigation';
-import hero from './components/hero';
-import splash from './components/splash';
+import navigation from './components/navigation/navigation.js';
+import hero from './components/hero/hero.js';
+import splash from './components/splash/splash.js';
 import test from './components/test';
+import about from './components/about/about.js';
+import projects from './components/projects/projects.js';
 
 // window.addEventListener('load', () => {
 //     setTimeout(() => {
@@ -15,7 +17,10 @@ import test from './components/test';
 layout()
 document.querySelector('header').append(navigation())
 document.querySelector('main').append(hero())
-// splash() 
+document.querySelector('main').appendChild(about())
+document.querySelector('main').appendChild(projects())
+
+// splash()
 // test()
 
 

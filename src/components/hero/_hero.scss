@@ -1,5 +1,7 @@
 .heroEl{
-    height: 95vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     // text-align: center;
     &__headline{
         font-size: 2rem;
@@ -19,9 +21,10 @@
         margin-left: .8rem;
     }
     &__about{
+        font-size: clamp(1rem, 4vw, 1.8rem);
         line-height: 1.5rem;
         width: 96%;
-        margin-bottom: 1.2rem;
+        margin-bottom: .8rem;
     }
     &__focus{
         width: 100%;
@@ -37,30 +40,43 @@
     }
 
     &__arrowdown{   
-        margin-top: 3rem;
         width: 100%;
         background: none;
         border: none;
-        
+        cursor: pointer;
     }
     &__arrowIcon{
         display: block;
         color: rgba(245, 245, 245, 0.453);
         font-size: 100px;
     }
+    &__browserFlex{
+        margin: 1rem 0 15rem 0;
+    }
+    &__img{
+        width: 250px;
+        // display: block;
+    } 
 }
 
 @media only screen and (min-width: 700px) {
     .heroEl{
-       &__img{
-        width: 580px;
+    &__headline{
+        margin-top: 5%;
+    }
+        
+    &__img{
+        width: 250px;
+        // display: none;
     } 
     &__about{
-        width: 700px;
+        width: 600px;
+        line-height: 1.8rem;
     }
     &__browserFlex{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        // height: 450px;
     }
     &__focus{
         display: flex;
@@ -71,8 +87,8 @@
     &__focus th, &__focus td{
         padding: 1rem 2rem 0 0;
      }
-     &__arrowdown{   
-        margin-top: 10rem;
-    }
+    //  &__arrowdown{   
+    //     margin-top: 5rem;
+    // }
     }
   }
