@@ -1,3 +1,7 @@
+import mymovie from '/img/mymovies.jpg'
+import pokedex from '/img/pokdex.jpg'
+import newsify from '/img/newsify.jpg'
+
 export default function projects() {
     let projectsEl = document.createElement("div");
     projectsEl.className = "projects"
@@ -7,7 +11,7 @@ export default function projects() {
             <section class="projects__item">
             <div class="projects__imgcontainer">
                     <a href="#">
-                        <img src="src/img/mymovies.jpg" alt="mymovieProject" class="projects__img">
+                        <img src="${mymovie}" alt="mymovieProject" class="projects__img">
                     </a>
                 </div>
                 <section class="projects__info">
@@ -37,7 +41,7 @@ export default function projects() {
             <section class="projects__item">
             <div class="projects__imgcontainer">
                     <a href="https://rts-cmk-wu13.github.io/pokedex-ayachristia/">
-                        <img src="src/img/pokdex.jpg" alt="" class="projects__img">
+                        <img src="${pokedex}" alt="" class="projects__img">
                     </a>
                 </div>
                 <section class="projects__info">
@@ -67,7 +71,7 @@ export default function projects() {
             <section class="projects__item">
                 <div class="projects__imgcontainer">
                     <a href="https://strong-biscuit-7b11c5.netlify.app/">
-                        <img src="src/img/newsify.jpg" alt="newYorkTimes" class="projects__img">
+                        <img src="${newsify}" alt="newYorkTimes" class="projects__img">
                     </a>
                 </div>
                 <section class="projects__info">

@@ -1,4 +1,4 @@
-import portrait from '/src/img/d276c4a2-9717-47e0-bb56-6de859df40f8.jpg';
+import portrait from '/img/d276c4a2-9717-47e0-bb56-6de859df40f8.jpg';
 
 
 export default function about() {

@@ -2,6 +2,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-top: 4rem;
     // text-align: center;
     &__headline{
         font-size: 2rem;
@@ -51,7 +52,7 @@
         font-size: 100px;
     }
     &__browserFlex{
-        margin: 1rem 0 15rem 0;
+        margin: 1rem 0 5rem 0;
     }
     &__img{
         width: 250px;

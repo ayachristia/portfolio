@@ -2,6 +2,7 @@
 export default function hero() {
     const heroEl = document.createElement("div");
     heroEl.className = "heroEl"
+    heroEl.id = "heroEl"
 
     heroEl.innerHTML = `
     <h1 class="heroEl__headline">

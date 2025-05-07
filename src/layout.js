@@ -1,4 +1,4 @@
-import backgroundVid from "./img/vecteezy_animated-flying-through-the-stars-and-blue-nebula-in-space_8078506.mp4"
+import backgroundVid from "/img/vecteezy_animated-flying-through-the-stars-and-blue-nebula-in-space_8078506.mp4"
 
 export default function layout() {
     const body = document.querySelector('body')
@@ -7,8 +7,8 @@ export default function layout() {
         <source src="${backgroundVid}" type="video/mp4">
     </video>
 
+    <header></header>
     <div class="wrapper">
-        <header></header>
         <main></main>
         <footer></footer>
     </div>`

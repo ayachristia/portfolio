@@ -2,12 +2,11 @@
 
 header {
     position: sticky;
-    padding: 1rem 0 0 0;
+    padding: 0;
     top: 0;
     z-index: 1000;
-    width: $maxWidthBase;
+    width: 100%;
     margin: auto;
     background-color: rgba(128, 0, 128, 0);
-    border-bottom: 1px solid rgba(245, 245, 245, 0.317);
   }
   
