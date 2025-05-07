@@ -1,0 +1,87 @@
+.projects{
+    padding: 8rem .2rem 0 .2rem;
+
+    height: 100vh;
+    &__item{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    &__imgcontainer{
+        width: 35%;
+    }
+    &__info{
+        width: 65%;
+    }
+    &__info-headline{
+        font-size: 1rem;
+        text-decoration: underline;
+    }
+    &__info-stacks h3{
+        font-size: .9rem;
+    }
+    &__info-details{
+        font-size: .9rem;
+        display: flex;
+        gap: 3rem;
+    }
+    &__info-text{
+        padding: .4rem 1.5rem .2rem 0;
+    }
+    &__imgcontainer{
+        height: 150px;
+        background: #fffa;
+        box-shadow: 0px 0px 10px 3px #fffa inset;
+    }
+    &__imgcontainer:hover{
+        box-shadow: 0px 0px 10px 3px #fffa;
+
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        // aspect-ratio: 2/1;
+        // object-position: 0 -60px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .projects{
+        text-align: center;
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__info-text{
+        display: none;
+    }
+    &__item{
+        flex-direction: column;
+    }
+    &__info-headline{
+        font-size: 14px;
+        margin-bottom: .3rem;
+    }
+    &__info-stacks{
+        display: flex;
+        flex-direction: column;
+    }
+    &__info-stacks h3{
+        font-size: 12px;
+    }
+    &__info-details{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5rem;
+    }
+    &__imgcontainer{
+        width: 100%;
+        height: 70px;
+    }
+    }
+    
+}

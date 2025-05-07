@@ -1,0 +1,62 @@
+.divEl{
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    color: black;
+    transition: 4s;
+
+    // &__header{
+    //     position: absolute;
+    //     top: 20%;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     display: flex;
+    //     align-items: center;
+    //     flex-direction: column;
+    // }
+    // &__headline{
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     font-size: 32px;
+    // }
+    // // &__item{
+    // //     opacity: 0;
+    // //     // display: none;
+    // // }
+    // &__item:nth-child(1){
+    //     padding-top: 3.5rem;
+    // }
+    // &__item.fadein{
+    //     display: block;
+    //     animation: appear 1s;
+    // }
+    // &__item.fadeout{
+    //     display: none;
+    // }
+
+    
+}
+
+
+dialog{
+    display: none;
+}
+
+dialog[open]{
+    display: block;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -15,12 +15,16 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
     scroll-behavior: smooth;
+
+    // height: 100%;
+    margin: 0;
+    // overflow: hidden;
   }
   body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
     background-color: $backgroundColorPrimary;
-    color: whitesmoke;
+    color: rgb(201, 199, 199);
   }
   
   a {
