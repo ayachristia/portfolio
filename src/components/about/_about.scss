@@ -13,6 +13,7 @@
     &__text{
         width: 80%;
         line-height: 1.2rem;
+        font-size: 12px;
     }
     &__text--modifier1{
         // font-weight: bold;
@@ -49,19 +50,22 @@
     }
     &__svg{
         display: none;
-        width: 250px;
+        width: 200px;
         margin: 3rem 0;
     }
 }
 
 @media only screen and (max-width: 700px) {
     .about{
+    padding: 1rem 0rem;
+
         &__content{
             text-align: center;
             grid-template-columns: 1fr;
 
         }
         &__text{
+            // display: flex;
             width: 100%;
         }
         &__imgcontainer{
