@@ -11,8 +11,8 @@ export default function about() {
         <section class="about__textbox">
                 <h1 class="about__name">Hi, Im Aya</h1>
                 <p class="about__text">
-                <span class="about__text--modifier1"><span class="about__text--modifier2">I am currently</span> studying to become a Front End Web Developer, building and maintaining user interfaces for websites and web applications.</span>
-                <span class="about__text--modifier2">Transforming ideas</span> and UI/UX designs into responsive, interactive interfaces using HTML, CSS, and JavaScript is both challenging and rewarding 
+                <span class="about__text--modifier1"><span class="about__text--modifier2">I am currently</span> studying to become a Front End Developer, building and maintaining user interfaces for web applications.</span>
+                <span class="about__text--modifier2">Transforming ideas</span> & UI/UX designs into responsive, interactive interfaces is both challenging and rewarding. 
                 <span class="about__text--modifier3">- you could call it the work of a digital wizard. It's a skillset that continues to inspire me as I expand my knowledge and capabilities.</span>
                  
 
