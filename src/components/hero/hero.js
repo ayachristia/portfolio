@@ -33,9 +33,9 @@ export default function hero() {
     </div>
 
     
-    <a href="#about">
-        <button class="heroEl__arrowdown">
-        <span class="material-symbols-outlined heroEl__arrowIcon">
+    <a href="#about" class="arrowdown">
+            <button class="arrowdown__button">
+            <span class="material-symbols-outlined arrowdown__icon">
         
         keyboard_arrow_down
 

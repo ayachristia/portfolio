@@ -1,11 +1,12 @@
 .about{
+    position: relative;
     
     height: 100vh;
     padding: 8rem 0.2rem;
     &__content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-
+        margin-bottom: 4rem;
     }
     &__name{
         margin: 2rem 0;

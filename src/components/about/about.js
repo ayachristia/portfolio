@@ -45,9 +45,9 @@ export default function about() {
             
             
 
-            <a href="#projects">
-        <button class="heroEl__arrowdown">
-        <span class="material-symbols-outlined heroEl__arrowIcon">
+            <a href="#projects" class="arrowdown">
+            <button class=" arrowdown__button">
+            <span class="material-symbols-outlined arrowdown__icon">
         
         keyboard_arrow_down
 
