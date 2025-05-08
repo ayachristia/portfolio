@@ -70,7 +70,7 @@ export default function projects() {
 
             <section class="projects__item">
                 <div class="projects__imgcontainer">
-                    <a href="https://strong-biscuit-7b11c5.netlify.app/">
+                    <a href="https://ayanewsify.netlify.app/">
                         <img src="${newsify}" alt="newYorkTimes" class="projects__img">
                     </a>
                 </div>
