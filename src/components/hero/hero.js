@@ -11,7 +11,7 @@ export default function hero() {
     </h1>
 
     <p class="heroEl__about">
-        Hello! I'm <b>Aya</b>. An aspiring Frontend Developer currently studying fulltime at Roskilde Technical school with 1+ years of experience in building dynamic, scalable and responsive web solutions.
+        Hello! I'm <b>Aya</b>. An aspiring Frontend Developer currently studying fulltime, with 1+ years of experience.
     </p>
 
     <div class="heroEl__browserFlex">
