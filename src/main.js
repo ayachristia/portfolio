@@ -20,7 +20,7 @@ document.querySelector('main').append(hero())
 document.querySelector('main').appendChild(about())
 document.querySelector('main').appendChild(projects())
 
-// splash()
+splash()
 // test()
 
 
