@@ -10,7 +10,7 @@ export default function projects() {
     projectsEl.innerHTML = `
             <section class="projects__item">
             <div class="projects__imgcontainer">
-                    <a href="#">
+                    <a href="ayamymovie.netlify.app">
                         <img src="${mymovie}" alt="mymovieProject" class="projects__img">
                     </a>
                 </div>
