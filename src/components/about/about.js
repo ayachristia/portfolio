@@ -29,10 +29,10 @@ export default function about() {
       <image 
       href="${portrait}" 
       clip-path="url(#shapeClip)" 
-      x="100"
+      x="80"
       y="95"
-      width="300"
-      height="310"
+      width="400"
+      height="410"
       preserveAspectRatio="xMidYMid slice"
     />
     </svg>
