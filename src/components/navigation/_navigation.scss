@@ -92,6 +92,12 @@
     pointer-events: none;        // prevent clicks
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
+.hiddenOverlay {
+    // transform: translateX(100%); // move off-screen to the right
+    opacity: 0;                  // make invisible
+    pointer-events: none;        // prevent clicks
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
 .overlay{
         position: absolute;
         width: 100vw;
