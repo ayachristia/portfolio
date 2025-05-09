@@ -94,7 +94,7 @@ export default function projects() {
                         <p>Node.js</p>
                         </div>
                     </section>
-                    <p class="projects__info-text">Automation, css modularization, animations, storage of data and uptimization of user experience.</p>
+                    <p class="projects__info-text">Automation, css modularization, animations, storage of data and uptimization of user experience. MOBILE first project, ongoing project</p>
                 </section>
             </section>
             
