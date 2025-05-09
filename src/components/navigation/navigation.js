@@ -31,7 +31,7 @@ export default function navigation() {
 
         <button class="navigation__burger-close" aria-label="closeMenuButton">X</button>
     </section>
-    <div class="overlay hidden"></div>
+    <div class="overlay hiddenOverlay"></div>
     `;
 
     //  <!-- <div class="navigation__logo"><a href="index.html">TOP</a></div> -->
@@ -51,20 +51,30 @@ export default function navigation() {
     const burgerBtn = navEl.querySelector(".navigation__burgerBtn");
     const overlay = navEl.querySelector(".overlay");
     const navBurger = navEl.querySelector(".navigation__burger");
+    const burgerCloseBtn = navEl.querySelector(".navigation__burger-close");
+
+    function closeBurgermenu() {
+        navBurger.classList.add("hidden");
+        overlay.classList.add("hiddenOverlay");
+        burgerBtn.setAttribute("aria-expanded", false);
+    }
+    function openBurgermenu() {
+        navBurger.classList.remove("hidden");
+        overlay.classList.remove("hiddenOverlay");
+        burgerBtn.setAttribute("aria-expanded", true);
+    }
 
     burgerBtn.addEventListener("click", function () {
-        navBurger.classList.remove("hidden");
-        overlay.classList.remove("hidden");
-
-        // burgerBtn.setAttribute("aria-expanded", true);
+        openBurgermenu()
     });
 
-    const burgerCloseBtn = navEl.querySelector(".navigation__burger-close");
     burgerCloseBtn.addEventListener("click", function () {
-        navBurger.classList.add("hidden");
-        overlay.classList.add("hidden");
-        // burgerBtn.setAttribute("aria-expanded", false);
+        closeBurgermenu()
     });
+
+    overlay.addEventListener('click', () => {
+        closeBurgermenu()
+    })
 
     return navEl;
 }
