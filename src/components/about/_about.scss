@@ -1,3 +1,5 @@
+@use '/src/styles/variables' as *;
+
 .about{
     position: relative;
     
@@ -10,14 +12,16 @@
     }
     &__name{
         margin: 2rem 0;
+        font-family: "Oxanium";
+        font-size: $headlineFontSize;
     }
     &__text{
         width: 80%;
         line-height: 1.2rem;
-        font-size: 12px;
+        font-size: $regularFontSize;
+        font-family: "Oxanium";
     }
     &__text--modifier1{
-        // font-weight: bold;
         display: block;
         margin-bottom: .4rem;
     }
@@ -58,12 +62,11 @@
 
 @media only screen and (max-width: 700px) {
     .about{
-    padding: 1rem 0rem;
+    padding: 1rem 1rem;
 
         &__content{
-            text-align: center;
+            text-align: left;
             grid-template-columns: 1fr;
-
         }
         &__text{
             // display: flex;
@@ -76,8 +79,14 @@
             display: block;
         }
         &__textbox{
-            width: 80%;
-            margin: auto;
+            width: 75%;
+            // margin: auto;
         }
+        &__right{
+            padding-right: 2rem;
+        display: flex;
+        justify-content: right;
+    }
+        
     }
 }

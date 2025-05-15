@@ -1,45 +1,95 @@
-.projects{
-    padding: 8rem .2rem 0 .2rem;
+.carousel {
+    width: 80%;
+    list-style: none;
+    padding: .5rem;
+    margin: 0;
 
+    position: relative;
+
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 2rem;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    anchor-name: --carousel;
+  
+  > li {
+    scroll-snap-align: center;
+  }
+
+  &::scroll-button(*){
+    position-anchor: --carousel;
+    position: absolute;
+    margin: 1rem;
+    font: inherit;
+    border: none;
+    color: white;
+    background: none;
+    cursor: pointer;
+  }
+
+
+  &::scroll-button(right){
+    content: 'Next';
+    position-area: center right;
+}
+    &::scroll-button(left){
+    content: 'Prev';
+    position-area: center left;
+  }
+
+  
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    padding: 8rem 0;
+    // width: 100%;
     height: 100vh;
     &__item{
         display: flex;
-        align-items: center;
         gap: 1rem;
-        width: 100%;
-        margin-bottom: 2rem;
+        padding: 1rem 0;
+        // align-items: center;
+        // width: 100%;
+        // margin-bottom: 2rem;
     }
     &__imgcontainer{
-        width: 35%;
+        width: 40%;
+        height: 100%;
     }
     &__info{
-        width: 65%;
+        width: 60%;
     }
-    &__info-headline{
-        font-size: 14px;
-        text-decoration: underline;
-    }
-    &__info-stacks h3{
-        font-size: .9rem;
-    }
-    &__info-details{
-        font-size: .9rem;
-        display: flex;
-        gap: 3rem;
-    }
-    &__info-text{
-        padding: .4rem 1.5rem .2rem 0;
-    }
-    &__imgcontainer{
-        height: 120px;
-        background: #fffa;
-        box-shadow: 0px 0px 10px 3px #fffa inset;
-        border-radius: 8px 8px;
-    }
-    &__imgcontainer:hover{
-        box-shadow: 0px 0px 10px 3px #fffa;
+    // &__info-headline{
+    //     font-size: 14px;
+    //     text-decoration: underline;
+    // }
+    // &__info-stacks h3{
+    //     font-size: .9rem;
+    // }
+    // &__info-details{
+    //     font-size: .9rem;
+    //     display: flex;
+    //     gap: 3rem;
+    // }
+    // &__info-text{
+    //     padding: .4rem 1.5rem .2rem 0;
+    // }
+    // &__imgcontainer{
+    //     height: 120px;
+    //     background: #fffa;
+    //     box-shadow: 0px 0px 10px 3px #fffa inset;
+    //     border-radius: 8px 8px;
+    // }
+    // &__imgcontainer:hover{
+    //     box-shadow: 0px 0px 10px 3px #fffa;
 
-    }
+    // }
     &__img{
         width: 100%;
         height: 100%;
@@ -51,40 +101,40 @@
 }
 
 @media only screen and (max-width: 700px){
-    .projects{
-        text-align: center;
-    &__info{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    &__info-text{
-        display: none;
-    }
-    &__item{
-        flex-direction: column;
-    }
-    &__info-headline{
-        font-size: .7rem;
-        margin-bottom: .3rem;
-    }
-    &__info-stacks p{
-        font-size: 10px;
-    }
-    &__info-stacks h3{
-        font-size: 10px;
-    }
-    &__info-details{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: .5rem;
-    }
-    &__imgcontainer{
-        width: 100%;
-        height: 70px;
-    }
-    }
+    // .projects{
+    //     text-align: center;
+    // &__info{
+    //     width: 100%;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
+    // &__info-text{
+    //     display: none;
+    // }
+    // &__item{
+    //     flex-direction: column;
+    // }
+    // &__info-headline{
+    //     font-size: .7rem;
+    //     margin-bottom: .3rem;
+    // }
+    // &__info-stacks p{
+    //     font-size: 10px;
+    // }
+    // &__info-stacks h3{
+    //     font-size: 10px;
+    // }
+    // &__info-details{
+    //     width: 100%;
+    //     display: grid;
+    //     grid-template-columns: repeat(4, 1fr);
+    //     gap: .5rem;
+    // }
+    // &__imgcontainer{
+    //     width: 100%;
+    //     height: 70px;
+    // }
+    // }
     
 }

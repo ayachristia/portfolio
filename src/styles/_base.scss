@@ -15,10 +15,7 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
     scroll-behavior: smooth;
-
-    // height: 100%;
     margin: 0;
-    // overflow: hidden;
   }
   body {
     font-family: Helvetica, Arial, sans-serif;
@@ -33,10 +30,17 @@
   }
   
   .wrapper {
-    width: $maxWidthBase;
+    width: min(100%,1024px);
     margin: auto;
     position: relative;
   }
   
   /* ----base region end----*/
   
+  //fonts
+  @font-face {
+    font-family: "Oxanium";
+    src: url("/src/styles/Oxanium-VariableFont_wght.ttf") format("truetype-variations");
+    font-weight: 400;
+    font-style: normal;
+  }

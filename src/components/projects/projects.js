@@ -3,17 +3,20 @@ import pokedex from '/img/pokdex.jpg'
 import newsify from '/img/newsify.jpg'
 
 export default function projects() {
-    let projectsEl = document.createElement("div");
+    let projectsEl = document.createElement("ul");
     projectsEl.className = "projects"
     projectsEl.id = "projects"
 
     projectsEl.innerHTML = `
-            <section class="projects__item">
-            <div class="projects__imgcontainer">
+            <ul class="carousel">
+                
+                <li class="projects__item">
+                <div class="projects__imgcontainer">
                     <a href="https://ayamymovie.netlify.app/">
                         <img src="${mymovie}" alt="mymovieProject" class="projects__img">
                     </a>
                 </div>
+
                 <section class="projects__info">
                     <h2 class="projects__info-headline">Tech stack</h2>
                     <section class="projects__info-details">
@@ -36,9 +39,9 @@ export default function projects() {
                     </section>
                     <p class="projects__info-text">This project focuses on list view and detail view using URL parameters (query strings). </p>
                 </section>
-            </section>
+            </li>
             
-            <section class="projects__item">
+            <li class="projects__item">
             <div class="projects__imgcontainer">
                     <a href="https://rts-cmk-wu13.github.io/pokedex-ayachristia/">
                         <img src="${pokedex}" alt="" class="projects__img">
@@ -66,9 +69,9 @@ export default function projects() {
                     </section>
                     <p class="projects__info-text">This project focuses on list view and detail view using URL parameters (query strings). </p>
                 </section>
-            </section>
+            </li>
 
-            <section class="projects__item">
+            <li class="projects__item">
                 <div class="projects__imgcontainer">
                     <a href="https://ayanewsify.netlify.app/">
                         <img src="${newsify}" alt="newYorkTimes" class="projects__img">
@@ -96,7 +99,10 @@ export default function projects() {
                     </section>
                     <p class="projects__info-text">Automation, css modularization, animations, storage of data and uptimization of user experience. MOBILE first project, ongoing project</p>
                 </section>
-            </section>
+            </li>
+
+            </ul>
+            
             
         `
 
