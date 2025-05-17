@@ -1,6 +1,6 @@
 
 export default function hero() {
-    const heroEl = document.createElement("div");
+    const heroEl = document.createElement("section");
     heroEl.className = "heroEl"
     heroEl.id = "heroEl"
 

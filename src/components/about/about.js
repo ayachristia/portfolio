@@ -2,7 +2,7 @@ import portrait from '/img/d276c4a2-9717-47e0-bb56-6de859df40f8.jpg';
 
 
 export default function about() {
-    let aboutEl = document.createElement("div");
+    let aboutEl = document.createElement("section");
     aboutEl.className = "about"
     aboutEl.id = "about"
 

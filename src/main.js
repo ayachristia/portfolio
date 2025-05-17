@@ -11,7 +11,7 @@ import projects from './components/projects/projects.js';
 //     setTimeout(() => {
 //         layout();
 //     }, 3000);
-
+console.log(projects);
 
 // });
 layout()
