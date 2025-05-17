@@ -11,7 +11,7 @@ import projects from './components/projects/projects.js';
 //     setTimeout(() => {
 //         layout();
 //     }, 3000);
-
+console.log(projects);
 
 // });
 layout()
@@ -20,7 +20,7 @@ document.querySelector('main').append(hero())
 document.querySelector('main').appendChild(about())
 document.querySelector('main').appendChild(projects())
 
-splash()
+// splash()
 // test()
 
 

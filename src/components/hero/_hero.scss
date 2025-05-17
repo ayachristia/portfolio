@@ -1,9 +1,12 @@
+@use '/src/styles/variables' as *;
+
 .heroEl{
     position: relative;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    padding-top: 4rem;
+    // padding-top: 4rem;
+    padding: 8rem 0.2rem;
     // text-align: center;
     &__headline{
         font-size: 2rem;
@@ -23,14 +26,15 @@
         margin-left: .8rem;
     }
     &__about{
-        font-size: clamp(1rem, 4vw, 1.8rem);
+        font-size: $regularFontSize;
         line-height: 1.5rem;
         width: 96%;
         margin-bottom: .8rem;
+        font-family: "Oxanium";
     }
     &__focus{
         width: 100%;
-        margin-bottom: 12rem;
+        font-family: "Oxanium";
     }
     &__focus th{
        text-align: center;

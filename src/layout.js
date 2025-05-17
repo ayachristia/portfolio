@@ -7,7 +7,7 @@ export default function layout() {
         <source src="${backgroundVid}" type="video/mp4">
     </video>
 
-    <header></header>
+    <header class="site__header"></header>
     <div class="wrapper">
         <main></main>
         <footer></footer>
