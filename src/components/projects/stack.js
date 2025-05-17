@@ -3,6 +3,7 @@ import css from '/img/css.png'
 import js from '/img/javascript.png'
 import node from '/img/nodejs.png'
 import react from '/img/react.png'
+import sqlite from '/img/sqLite.png'
 
 export default function stack() {
     const stackContainer = document.createElement('section')
@@ -47,6 +48,14 @@ export default function stack() {
         </div>
         <h2>
             React
+        </h2>
+    </div>
+    <div class="stack__item">
+        <div class="stack__imgcontainer">
+            <img src="${sqlite}" alt="" class="stack__sqLite">
+        </div>
+        <h2>
+            sqlite
         </h2>
     </div>
    
