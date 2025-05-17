@@ -9,7 +9,7 @@ export default function about() {
     aboutEl.innerHTML = `
     <section class="about__content">
         <section class="about__textbox">
-                <h1 class="about__name">Hi, Im Aya</h1>
+                <h1 class="about__name">< Hi, Im Aya /></h1>
                 <p class="about__text">
                 <span class="about__text--modifier1"><span class="about__text--modifier2">I am currently</span> studying to become a Front End Developer, building and maintaining user interfaces for web applications.</span>
                 <span class="about__text--modifier2">Transforming ideas</span> & UI/UX designs into responsive, interactive interfaces is both challenging and rewarding. 
