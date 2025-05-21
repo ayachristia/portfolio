@@ -76,6 +76,16 @@ export default function projects() {
             showElement(clickedFocus)
         })
     })
+
+    projectsEl.innerHTML = `
+    <a href="#scroll" class="arrowdown">
+            <button class=" arrowdown__button">
+            <span class="material-symbols-outlined arrowdown__icon">
+            keyboard_arrow_down
+            </span>
+            </button>
+            </a>
+    `
     //appending components to the projectsEl section
     projectsEl.append(projectsContext)
 

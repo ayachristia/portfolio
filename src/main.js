@@ -6,6 +6,7 @@ import splash from './components/splash/splash.js';
 import test from './components/test';
 import about from './components/about/about.js';
 import projects from './components/projects/projects.js';
+import scroll from './components/projects2/infiniteScroll.js';
 
 // window.addEventListener('load', () => {
 //     setTimeout(() => {
@@ -19,6 +20,7 @@ document.querySelector('header').append(navigation())
 document.querySelector('main').append(hero())
 document.querySelector('main').appendChild(about())
 document.querySelector('main').appendChild(projects())
+document.querySelector('main').appendChild(scroll())
 
 // splash()
 // test()

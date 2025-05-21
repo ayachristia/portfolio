@@ -62,7 +62,7 @@ export default function carousel() {
                             </a>
                         </div>
                         <div class="carousel__info">
-                            <a href="https://ayanewsify.netlify.app/>
+                            <a href="https://ayanewsify.netlify.app/">
                             <p class="carousel__info-text">Automation, css modularization, animations, storage of data and uptimization of user experience. Mobile first project, ongoing project</p>
 </a>
                         </div>

@@ -48,12 +48,10 @@ export default function about() {
             <a href="#projects" class="arrowdown">
             <button class=" arrowdown__button">
             <span class="material-symbols-outlined arrowdown__icon">
-        
-        keyboard_arrow_down
-
-        </span>
-        </button>
-    </a>
+            keyboard_arrow_down
+            </span>
+            </button>
+            </a>
         `
 
     return aboutEl
