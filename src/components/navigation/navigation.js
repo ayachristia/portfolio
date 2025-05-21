@@ -12,7 +12,7 @@ export default function navigation() {
       
    
     
-    <section class="navigation__burger hidden">
+    <section class="navigation__burger hiddenMenu">
         <nav class="navigation__burger-list">
             <a href="#heroEl" class="navigation__navitem"><span class="dot"></span>Home</a>
             <a href="#about" class="navigation__navitem"><span class="dot"></span>About me</a>
@@ -54,12 +54,12 @@ export default function navigation() {
     const burgerCloseBtn = navEl.querySelector(".navigation__burger-close");
 
     function closeBurgermenu() {
-        navBurger.classList.add("hidden");
+        navBurger.classList.add("hiddenMenu");
         overlay.classList.add("hiddenOverlay");
         burgerBtn.setAttribute("aria-expanded", false);
     }
     function openBurgermenu() {
-        navBurger.classList.remove("hidden");
+        navBurger.classList.remove("hiddenMenu");
         overlay.classList.remove("hiddenOverlay");
         burgerBtn.setAttribute("aria-expanded", true);
     }

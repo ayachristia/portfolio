@@ -1,7 +1,5 @@
 
-import carousel from './carousel';
 import stack from './stack';
-const components = [carousel, stack]
 import projectsHeader from './header';
 import scroll from './projectslider';
 
