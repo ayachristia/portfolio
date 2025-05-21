@@ -15,3 +15,25 @@
     text-align: center;
     padding: 20px;
 }
+
+.video-background {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.video-background.loaded {
+  opacity: 1;
+}
+
+body.loading {
+  visibility: hidden;
+}
+
+/* Fading effekt for en mere smooth transition */
+body {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+body:not(.loading) {
+  opacity: 1;
+}

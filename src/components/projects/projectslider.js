@@ -9,86 +9,86 @@ export default function scroll() {
     // Create the section element
     let sectionEl = document.createElement("section");
     sectionEl.className = "scroll";
-    sectionEl.id = "scroll";
+    sectionEl.id = "component__projects"
     sectionEl.tabIndex = 0;
 
     // Add HTML content
     sectionEl.innerHTML = `
-            <section class="scroll__container">
-                <section class="scroll__track">
+                <section class="scroll__container">
+                    <section class="scroll__track">
+
+                    <article class="scroll__slide">
+                        <div class="scroll__content">
+                        <div class="scroll__images">
+                        <a href="https://ayamymovie.netlify.app/" class="scroll__link">
+                            <div class="scroll__imgcontainer">
+                                <img src="${mymovie2}" alt="" class="scroll__img">
+                            </div>
+                            
+                            <div class="scroll__imgcontainer">
+                                <img src="${mymovie1}" alt="" class="scroll__img">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="scroll__info">
+                                <a href="https://ayamymovie.netlify.app/">
+                                <p class="scroll__info-text">This project focuses on list view and detail view using URL parameters (query strings). </p>
+                                </a>
+                    </div> 
+                    </div>
+                    
+                </article>
 
                 <article class="scroll__slide">
                     <div class="scroll__content">
-                       <div class="scroll__images">
-                    <a href="https://ayamymovie.netlify.app/" class="scroll__link">
+                    <div class="scroll__images">
+                        <a href="https://ayas-pokedex.netlify.app/" class="scroll__link">
                         <div class="scroll__imgcontainer">
-                            <img src="${mymovie2}" alt="" class="scroll__img">
+                            <img src="${pokedex1}" alt="" class="scroll__img">
                         </div>
-                        
                         <div class="scroll__imgcontainer">
-                            <img src="${mymovie1}" alt="" class="scroll__img">
+                            <img src="${pokedex2}" alt="" class="scroll__img">
                         </div>
                     </a>
-                </div>
-
-                <div class="scroll__info">
-                            <a href="https://ayamymovie.netlify.app/">
-                            <p class="scroll__info-text">This project focuses on list view and detail view using URL parameters (query strings). </p>
-                            </a>
-                </div> 
-                </div>
-                
-            </article>
-
-            <article class="scroll__slide">
-                <div class="scroll__content">
-                <div class="scroll__images">
-                    <a href="https://ayas-pokedex.netlify.app/" class="scroll__link">
-                    <div class="scroll__imgcontainer">
-                        <img src="${pokedex1}" alt="" class="scroll__img">
-                    </div>
-                    <div class="scroll__imgcontainer">
-                        <img src="${pokedex2}" alt="" class="scroll__img">
-                    </div>
-                </a>
-                </div>
-
-                <div class="scroll__info">
-                            <a href="https://ayas-pokedex.netlify.app/">
-                            <p class="scroll__info-text">This project focuses on list view and detail view using URL parameters (query strings). </p>
-                            </a>
-                </div>
-                </div>
-            </article>
-
-            <article class="scroll__slide">
-                <div class="scroll__content">
-                    <div class="scroll__images">
-                   <a href="https://ayanewsify.netlify.app/" class="scroll__link">
-                    <div class="scroll__imgcontainer">
-                        <img src="${newsify1}" alt="" class="scroll__img">
                     </div>
 
-                    <div class="scroll__imgcontainer">
-                        <img src="${newsify2}" alt="" class="scroll__img">
+                    <div class="scroll__info">
+                                <a href="https://ayas-pokedex.netlify.app/">
+                                <p class="scroll__info-text">This project focuses on list view and detail view using URL parameters (query strings). </p>
+                                </a>
                     </div>
-                </a> 
-                </div>
+                    </div>
+                </article>
 
-                <div class="scroll__info">
-                            <a href="https://ayanewsify.netlify.app/">
-                            <p class="scroll__info-text">Automation, css modularization, animations, storage of data and uptimization of user experience. Mobile first project, ongoing project</p>
-                            </a>
+                <article class="scroll__slide">
+                    <div class="scroll__content">
+                        <div class="scroll__images">
+                    <a href="https://ayanewsify.netlify.app/" class="scroll__link">
+                        <div class="scroll__imgcontainer">
+                            <img src="${newsify1}" alt="" class="scroll__img">
                         </div>
-                </div>
-                
-            </article>
 
+                        <div class="scroll__imgcontainer">
+                            <img src="${newsify2}" alt="" class="scroll__img">
+                        </div>
+                    </a> 
+                    </div>
+
+                    <div class="scroll__info">
+                                <a href="https://ayanewsify.netlify.app/">
+                                <p class="scroll__info-text">Automation, css modularization, animations, storage of data and uptimization of user experience. Mobile first project, ongoing project</p>
+                                </a>
+                            </div>
+                    </div>
+                    
+                </article>
+
+                </section>
+                <button class="scroll__nav scroll__left" id="prev-btn">&lt;&lt;</button>
+                <button class="scroll__nav scroll__right" id="next-btn">&gt;&gt;</button>
             </section>
-            <button class="scroll__nav scroll__left" id="prev-btn">&lt;&lt;</button>
-            <button class="scroll__nav scroll__right" id="next-btn">&gt;&gt;</button>
-        </section>
-    `;
+        `;
 
     // Return the section element first to make sure it gets into the DOM
     setTimeout(() => {
@@ -252,6 +252,8 @@ function initCarousel(carouselId) {
 
     // Keyboard navigation
     function handleKeyDown(e) {
+
+        e.preventDefault();
         console.log('Key pressed:', e.key);
         if (e.key === 'ArrowRight') {
             nextSlide();
@@ -260,7 +262,7 @@ function initCarousel(carouselId) {
         }
     }
 
-    document.addEventListener('keydown', handleKeyDown);
+    sectionEl.addEventListener('keydown', handleKeyDown);
 
     // Handle resize
     window.addEventListener('resize', handleResize);
