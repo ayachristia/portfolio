@@ -3,6 +3,7 @@ import carousel from './carousel';
 import stack from './stack';
 const components = [carousel, stack]
 import projectsHeader from './header';
+import scroll from './projectslider';
 
 export default function projects() {
     let projectsEl = document.createElement("section");
@@ -41,7 +42,7 @@ export default function projects() {
     //projects context focus for carousel and tech stack
     const projectsFocus = document.createElement('section')
     projectsFocus.className = 'projects__focus';
-    projectsFocus.append(carousel())
+    projectsFocus.append(scroll())
     projectsFocus.append(stack())
 
     //appending navigation tabs and focus from import to context container
@@ -76,6 +77,8 @@ export default function projects() {
             showElement(clickedFocus)
         })
     })
+
+
     //appending components to the projectsEl section
     projectsEl.append(projectsContext)
 
