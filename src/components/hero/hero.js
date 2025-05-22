@@ -16,18 +16,20 @@ export default function hero() {
 
     <div class="heroEl__browserFlex">
 
-        <table class="heroEl__focus">
-            <tr>
-                <th>1st</th>
-                <th>10+</th>
-                <th>10k+</th>
-            </tr>
-            <tr>
-                <td>Year of studies</td>
-                <td>School projects</td>
-                <td>Hours worked</td>
-            </tr>
-        </table>
+        <section class="heroEl__focus">
+            <div class="heroEl__stats">
+                <h1 class="heroEl__stats--headline">1st</h1>
+                <p class="heroEl__stats--text">Year of studies</p>
+            </div>
+            <div class="heroEl__stats">
+                <h1 class="heroEl__stats--headline">10+</h1>
+                <p class="heroEl__stats--text">School Projects</p>
+            </div>
+            <div class="heroEl__stats">
+                <h1 class="heroEl__stats--headline">10k+</h1>
+                <p class="heroEl__stats--text">Hours Worked</p>
+            </div>
+        </section>
     
         
     </div>
@@ -44,5 +46,6 @@ export default function hero() {
     </a>
     `
 
+    console.log(heroEl.querySelector('.heroEl__about'))
     return heroEl;
 }

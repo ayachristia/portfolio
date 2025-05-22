@@ -44,3 +44,12 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  /* font face rule*/
+  @font-face {
+  font-family: 'Anta Regular';
+  src: url("Anta-Regular.ttf") format('truetype-variations');
+  // font-weight: ;
+  // font-style: ;
+  // font-weight: ;
+  }

@@ -3,8 +3,9 @@
 //projects main classes
 .projects{
     position: relative;
-    padding: 6rem 2rem;
+    padding: 6rem 2rem 2rem 2rem;
     height: 100vh;
+    // width: 100%;
 
     font-family: "Oxanium";
     display: grid;
@@ -30,6 +31,8 @@
 
     //navigation
     &__navigation{
+        width: 100%;
+        max-width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
@@ -51,8 +54,13 @@
     //context
     &__contextContainer{
         display: flex;
+        max-width: 100%;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: .8rem;
+        overflow: hidden;
+    }
+    &__focus{
+        max-width: 100%;
     }
    
 }
