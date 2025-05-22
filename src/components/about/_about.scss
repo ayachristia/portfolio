@@ -11,7 +11,7 @@
         margin-bottom: 4rem;
     }
     &__name{
-        margin: 2rem 0;
+        margin: clamp(.5rem, 2vw, 2rem) 0;
         font-family: "Oxanium";
         font-size: $headlineFontSize;
         color: $headlineColor;
@@ -61,7 +61,8 @@
 
 @media only screen and (max-width: 700px) {
     .about{
-    padding: 1rem 1rem;
+        padding: 2rem;
+
 
         &__content{
             text-align: left;

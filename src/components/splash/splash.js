@@ -21,7 +21,6 @@ export default function splash() {
     `
     body.appendChild(introEl)
 
-    let introContainer = introEl.querySelector('.intro__text')
     let introItem = introEl.querySelectorAll('.intro__item')
 
     window.addEventListener('DOMContentLoaded', () => {
