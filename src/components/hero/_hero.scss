@@ -37,6 +37,7 @@
         justify-content: flex-end;
         gap: 2rem;
         font-family: "Oxanium";
+        margin: 4rem 0 5rem 0;
     }
     &__stats{
         display: flex;
@@ -51,11 +52,9 @@
     }
     &__stats--text{
         text-align: center;
-        font-size: clamp(1rem, 2vw, 2.2rem);
+        font-size: clamp(.8rem, 2vw, 1.3rem);
     }
-    &__browserFlex{
-        margin: 4rem 0 5rem 0;
-    }
+  
     &__img{
         width: 250px;
         // display: block;
@@ -82,6 +81,7 @@
     &__browserFlex{
         display: flex;
         justify-content: space-around;
+        margin: 1rem 0 2rem 0;
         // height: 450px;
     }
     &__focus{
@@ -90,6 +90,7 @@
         justify-content: center;
         flex-direction: column;
         width: 45%;
+        gap: 1rem;
     }
     }
   }

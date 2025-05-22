@@ -18,11 +18,11 @@ window.onload = function () {
     }
 };
 layout()
-// splash()
+splash()
 
 
 
-document.querySelector('header').append(navigation())
+document.querySelector('body').append(navigation())
 document.querySelector('main').append(hero())
 document.querySelector('main').append(about())
 document.querySelector('main').append(projects())
