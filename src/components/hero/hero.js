@@ -6,20 +6,19 @@ export default function hero() {
 
     heroEl.innerHTML = `
     <h1 class="heroEl__headline">
-        <span class="heroEl__frontdev heroEl__frontdev--front">frontend</span>
-        <span class="heroEl__frontdev heroEl__frontdev--dev">developer</span>
+        <span class="heroEl__frontdev heroEl__frontdev--front">< frontend</span>
+        <span class="heroEl__frontdev heroEl__frontdev--dev">developer / ></span>
     </h1>
 
     <p class="heroEl__about">
         Hello! I'm <b>Aya</b>. An aspiring Frontend Developer currently studying fulltime, with 1+ years of experience.
     </p>
 
-    <div class="heroEl__browserFlex">
 
         <section class="heroEl__focus">
             <div class="heroEl__stats">
                 <h1 class="heroEl__stats--headline">1st</h1>
-                <p class="heroEl__stats--text">Year of studies</p>
+                <p class="heroEl__stats--text">Year Of Studies</p>
             </div>
             <div class="heroEl__stats">
                 <h1 class="heroEl__stats--headline">10+</h1>
@@ -29,7 +28,6 @@ export default function hero() {
                 <h1 class="heroEl__stats--headline">10k+</h1>
                 <p class="heroEl__stats--text">Hours Worked</p>
             </div>
-        </section>
     
         
     </div>

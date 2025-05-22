@@ -14,49 +14,49 @@ export default function stack() {
         <div class="stack__imgcontainer">
             <img src="${html}" alt="" class="stack__html">
         </div>
-        <h2>
+        <h3>
             Html
-        </h2>
+        </h3>
     </div>
     <div class="stack__item">
         <div class="stack__imgcontainer">
             <img src="${css}" alt="" class="stack__css">
         </div>
-        <h2>
+        <h3>
             Css
-        </h2>
+        </h3>
     </div>
     <div class="stack__item">
         <div class="stack__imgcontainer">
             <img src="${js}" alt="" class="stack__js">
         </div>
-        <h2>
+        <h3>
             Javascript
-        </h2>
+        </h3>
     </div>
     <div class="stack__item">
         <div class="stack__imgcontainer">
             <img src="${node}" alt="" class="stack__node">
         </div>
-        <h2>
+        <h3>
             Node.js
-        </h2>
+        </h3>
     </div>
     <div class="stack__item">
         <div class="stack__imgcontainer">
             <img src="${react}" alt="" class="stack__react">
         </div>
-        <h2>
+        <h3>
             React
-        </h2>
+        </h3>
     </div>
     <div class="stack__item">
         <div class="stack__imgcontainer">
             <img src="${sqlite}" alt="" class="stack__sqLite">
         </div>
-        <h2>
+        <h3>
             sqlite
-        </h2>
+        </h3>
     </div>
    
     `

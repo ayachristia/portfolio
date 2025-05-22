@@ -17,9 +17,9 @@
     &__header{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        // align-items: center;
+        // justify-content: center;
+        // text-align: center;
     }
     &__headline{
         font-size: $headline1;
@@ -27,6 +27,7 @@
     }
     &__subtext{
         font-size: 1rem;
+        margin-left: 2.5rem;
     }
 
     //navigation
@@ -36,7 +37,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
-        padding: 2rem 2rem;
+        padding: 1.2em;
         background-color: rgba(171, 45, 244, 0.185);
         border-radius: 20px;
         border: 1px solid rgba(227, 204, 239, 0.185);
@@ -55,9 +56,18 @@
     &__contextContainer{
         display: flex;
         max-width: 100%;
+        min-height: fit-content;
+        height: auto; 
         flex-direction: column;
         gap: .8rem;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: visible;
+        scrollbar-width: none;
+        -ms-overflow-style: none
+        }
+
+    &__contextContainer::-webkit-scrollbar {
+        display: none;
     }
     &__focus{
         max-width: 100%;
@@ -70,9 +80,9 @@
 //stack
 .stack{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(clamp(4rem, 8vw, 7rem), 1fr));
     gap: 1rem;
-    padding: 1rem 2remclear;
+    padding: 1rem;
     &__item{
         display: flex;
         flex-direction: column;
@@ -80,11 +90,18 @@
         justify-content: center;
         // width: 142px;
         // max-width: 142px;
-        height: 160px;
+        height: clamp(90px, 20vw, 150px);
+        // height: 150px;
+        // width: min(25vw, 150rem);
         background-color: rgba(120, 44, 120, 0.251);
         border-radius: 20px;
         
         padding: .5rem 0 0 0;
+
+        &>h3{
+            font-size: $headline3;
+            color: $headlineColor;
+        }
     }
 
     &__imgcontainer{
@@ -256,6 +273,9 @@
     .projects{
     display: flex;
     flex-direction: column;
+    padding: 5rem 2rem 2rem 2rem;
+    gap: 1.5rem;
+
     &__navigation{
         padding: 1rem 2rem;
     }
