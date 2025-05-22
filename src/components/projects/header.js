@@ -7,7 +7,7 @@ export default function projectsHeader() {
     const projectsHeadline = document.createElement('h1')
     projectsHeadline.className = "projects__headline"
     projectsHeadline.textContent = "< Portfolio showoff />"
-    const projectsSubtext = document.querySelector('p')
+    const projectsSubtext = document.createElement('p')
     projectsSubtext.className = "projects__subtext"
     projectsSubtext.textContent = "Dive into my projects and technical skills."
 

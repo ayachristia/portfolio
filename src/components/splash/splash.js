@@ -5,7 +5,7 @@ export default function splash() {
     introEl.className = 'intro'
 
     introEl.innerHTML = `
-        <h1 class="intro__header">
+        <h1 class="intro__text">
             <span class="intro__item">a</span>
             <span class="intro__item">y</span>
             <span class="intro__item">a</span>
@@ -21,30 +21,32 @@ export default function splash() {
     `
     body.appendChild(introEl)
 
-    let introHeader = introEl.querySelector('.intro__header')
-    let introSpan = introEl.querySelectorAll('.intro__item')
+    let introContainer = introEl.querySelector('.intro__text')
+    let introItem = introEl.querySelectorAll('.intro__item')
 
     window.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
-            introSpan.forEach((span, index) => {
+            introItem.forEach((Item, index) => {
                 setTimeout(() => {
-                    span.classList.add('active')
-                }, (index + 1) * 125)
-            })
+                    //sender hvert bogstav ned til bottom 0
+                    Item.classList.add('active')
+                }, (index + 1) * 80)
+            }, 1250)
 
-            setTimeout(() => {
-                introSpan.forEach((span, index) => {
-                    setTimeout(() => {
-                        span.classList.remove('active')
-                        span.classList.add('fade')
-                    }, (index + 1) * 120)
-                })
-            }, 2000);
+            // setTimeout(() => {
+            //     // introItem.forEach((Item, index) => {
+            //     //     setTimeout(() => {
+            //     //         Item.classList.remove('active')
+            //     //     }, (index + 1) * 120)
+            //     // })
+            //     introContainer.classList.add('fade')
+
+            // }, 1000);
 
             setTimeout(() => {
                 introEl.style.bottom = '-100vh'
-                introEl.classList.add('fadeback')
-            }, 2000)
+                introEl.classList.add('fade')
+            }, 1300)
 
         })
     })

@@ -5,10 +5,8 @@ import hero from './components/hero/hero.js';
 import splash from './components/splash/splash.js';
 import about from './components/about/about.js';
 import projects from './components/projects/projects.js';
-import scroll from './components/projects/projectslider.js';
 
 
-console.log(projects);
 window.onload = function () {
     if (performance.navigation.type === 1) {
         window.scrollTo(0, 0);
@@ -20,7 +18,7 @@ window.onload = function () {
     }
 };
 layout()
-splash()
+// splash()
 
 
 

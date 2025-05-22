@@ -13,7 +13,7 @@
         margin-top: 10%;
     }
     &__frontdev{
-        font-size: 2.2rem;
+        font-size: clamp(2rem, 5vw, 4.2rem);
         display: block;
         text-transform: uppercase;
         font-weight: bolder;
@@ -28,25 +28,33 @@
     &__about{
         font-size: $regularFontSize;
         line-height: 1.5rem;
-        width: 96%;
+        width: 40%;
         margin-bottom: .8rem;
         font-family: "Oxanium";
     }
     &__focus{
-        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
         font-family: "Oxanium";
     }
-    &__focus th{
+    &__stats{
+        display: flex;
+        flex-direction: column;
+    }
+    &__stats--headline{
+        font-weight: bolder;
        text-align: center;
-       font-size: 1.4rem;
+       font-size: 1.8rem;
        color: rgb(192, 2, 192);
        padding-bottom: .4rem;
     }
-    &__focus td{
-       text-align: center;
+    &__stats--text{
+        text-align: center;
+        font-size: clamp(1rem, 2vw, 2.2rem);
     }
     &__browserFlex{
-        margin: 8rem 0 5rem 0;
+        margin: 4rem 0 5rem 0;
     }
     &__img{
         width: 250px;
@@ -54,8 +62,10 @@
     } 
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (max-width: 700px) {
     .heroEl{
+    padding: 8rem 0.7rem;
+
     &__headline{
         margin-top: 5%;
     }
@@ -65,7 +75,8 @@
         // display: none;
     } 
     &__about{
-        width: 600px;
+                width: 90%;
+
         line-height: 1.8rem;
     }
     &__browserFlex{
@@ -77,13 +88,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         width: 45%;
     }
-    &__focus th, &__focus td{
-        padding: 1rem 2rem 0 0;
-     }
-    //  &__arrowdown{   
-    //     margin-top: 5rem;
-    // }
     }
   }
