@@ -100,8 +100,8 @@ export default function scroll() {
                     </div>
 
                     <div class="scroll__info">
-                                <a href="https://thereactdogs.netlify.app/">
-                                <p class="scroll__info-text">Automation, css modularization, animations, fetch calls, and uptimization of user experience. Mobile first project, scalable for all phones, even tablet. React focused.</p>
+                                <a href="https://github.com/rts-cmk-wu13/react-router-params-ayachristia">
+                                <p class="scroll__info-text">Automation, css modularization, animations, fetch calls(local fetch), and optimization of user experience. Mobile first project, scalable for all phones, even tablet. React focused.</p>
                                 </a>
                             </div>
                     </div>
