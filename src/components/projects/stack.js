@@ -4,6 +4,7 @@ import js from '/img/javascript.png'
 import node from '/img/nodejs.png'
 import react from '/img/react.png'
 import sqlite from '/img/sqLite.png'
+import bootsrap from '/img/Bootstrap_logo.png'
 
 export default function stack() {
     const stackContainer = document.createElement('section')
@@ -56,6 +57,14 @@ export default function stack() {
         </div>
         <h3>
             sqlite
+        </h3>
+    </div>
+    <div class="stack__item">
+        <div class="stack__imgcontainer">
+            <img src="${bootsrap}" alt="" class="stack__bootstrap">
+        </div>
+        <h3>
+            bootstrap
         </h3>
     </div>
    
