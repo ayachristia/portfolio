@@ -22,6 +22,27 @@ export default function scroll() {
                     <section class="scroll__track">
 
                     <article class="scroll__slide">
+                    <div class="scroll__content">
+                        <div class="scroll__images">
+                    <a href="https://businessboot.netlify.app/" class="scroll__link">
+                        <div class="scroll__imgcontainer">
+                            <img src="${businessboot1}" alt="" class="scroll__img">
+                        </div>
+
+                        <div class="scroll__imgcontainer">
+                            <img src="${businessboot2}" alt="" class="scroll__img">
+                        </div>
+                    </a> 
+                    </div>
+
+                    <div class="scroll__info">
+                                <a href="https://businessboot.netlify.app/">
+                                <p class="scroll__info-text">Ongoing independent project focusing on showing and expanding my knowledge on using <b>BOOTSTRAP</b> in a project, deployed to netlify.</p>
+                                </a>
+                            </div>
+                    </div>
+                    </article>
+                    <article class="scroll__slide">
                         <div class="scroll__content">
                         <div class="scroll__images">
                         <a href="https://ayamymovie.netlify.app/" class="scroll__link">
@@ -108,27 +129,7 @@ export default function scroll() {
                             </div>
                     </div>
                     </article>
-                <article class="scroll__slide">
-                    <div class="scroll__content">
-                        <div class="scroll__images">
-                    <a href="https://businessboot.netlify.app/" class="scroll__link">
-                        <div class="scroll__imgcontainer">
-                            <img src="${businessboot1}" alt="" class="scroll__img">
-                        </div>
-
-                        <div class="scroll__imgcontainer">
-                            <img src="${businessboot2}" alt="" class="scroll__img">
-                        </div>
-                    </a> 
-                    </div>
-
-                    <div class="scroll__info">
-                                <a href="https://github.com/rts-cmk-wu13/react-router-params-ayachristia">
-                                <p class="scroll__info-text">Ongoing independent project focusing on showing and expanding my knowledge on using <b>BOOTSTRAP</b> in a project, deployed to netlify.</p>
-                                </a>
-                            </div>
-                    </div>
-                    </article>
+                
 
                 </section>
                 <button class="scroll__nav scroll__left" id="prev-btn">&lt;&lt;</button>
