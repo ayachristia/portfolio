@@ -6,6 +6,8 @@ import newsify1 from '/img/newsify1.jpg';
 import newsify2 from '/img/newsify2.jpg';
 import dogs1 from '/img/doggydogs1.jpg';
 import dogs2 from '/img/doggydogs2.jpg';
+import businessboot1 from '/img/BusinessWeb.jpg'
+import businessboot2 from '/img/BusinessWeb2.jpg'
 
 export default function scroll() {
     // Create the section element
@@ -19,6 +21,27 @@ export default function scroll() {
                 <section class="scroll__container">
                     <section class="scroll__track">
 
+                    <article class="scroll__slide">
+                    <div class="scroll__content">
+                        <div class="scroll__images">
+                    <a href="https://businessboot.netlify.app/" class="scroll__link">
+                        <div class="scroll__imgcontainer">
+                            <img src="${businessboot1}" alt="" class="scroll__img">
+                        </div>
+
+                        <div class="scroll__imgcontainer">
+                            <img src="${businessboot2}" alt="" class="scroll__img">
+                        </div>
+                    </a> 
+                    </div>
+
+                    <div class="scroll__info">
+                                <a href="https://businessboot.netlify.app/">
+                                <p class="scroll__info-text">Ongoing independent project focusing on showing and expanding my knowledge on using <b>BOOTSTRAP</b> in a project, deployed to netlify.</p>
+                                </a>
+                            </div>
+                    </div>
+                    </article>
                     <article class="scroll__slide">
                         <div class="scroll__content">
                         <div class="scroll__images">
@@ -100,12 +123,13 @@ export default function scroll() {
                     </div>
 
                     <div class="scroll__info">
-                                <a href="https://thereactdogs.netlify.app/">
-                                <p class="scroll__info-text">Automation, css modularization, animations, fetch calls, and uptimization of user experience. Mobile first project, scalable for all phones, even tablet. React focused.</p>
+                                <a href="https://github.com/rts-cmk-wu13/react-router-params-ayachristia">
+                                <p class="scroll__info-text">Automation, css modularization, animations, fetch calls(local fetch), and optimization of user experience. Mobile first project, scalable for all phones, even tablet. React focused.</p>
                                 </a>
                             </div>
                     </div>
                     </article>
+                
 
                 </section>
                 <button class="scroll__nav scroll__left" id="prev-btn">&lt;&lt;</button>
