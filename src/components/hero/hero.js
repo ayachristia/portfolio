@@ -17,7 +17,7 @@ export default function hero() {
 
         <section class="heroEl__focus">
             <div class="heroEl__stats">
-                <h1 class="heroEl__stats--headline">1st</h1>
+                <h1 class="heroEl__stats--headline">2nd</h1>
                 <p class="heroEl__stats--text">Year Of Studies</p>
             </div>
             <div class="heroEl__stats">
