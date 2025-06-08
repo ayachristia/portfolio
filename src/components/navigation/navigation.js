@@ -33,25 +33,13 @@ export default function navigation() {
     </section>
     <div class="overlay hiddenOverlay"></div>
     `;
-
-    //  <!-- <div class="navigation__logo"><a href="index.html">TOP</a></div> -->
-    //     <!-- <section class="navigation__primary">
-    //     <nav class="navigation__navlist">
-    //         <a href="index.html" class="navigation__navitem">Skills</a>
-    //         <a href="#" class="navigation__navitem">Projects</a>
-    //         <a href="#" class="navigation__navitem">About</a>
-    //     </nav>
-    //     <div class="navigation__socials">
-    //     <a href="#"><span class="material-symbols-outlined">mail</span></a>
-    //     <a href="http://linkedin.com/in/aya-christiansen-53148482"><i class="fa fa-linkedin"></i></a>
-    //     </div>
-    //     </section> -->
-    //events
     /*burger event to open nav list*/
     const burgerBtn = navEl.querySelector(".navigation__burgerBtn");
     const overlay = navEl.querySelector(".overlay");
     const navBurger = navEl.querySelector(".navigation__burger");
     const burgerCloseBtn = navEl.querySelector(".navigation__burger-close");
+    const navItems = navEl.querySelectorAll(".navigation__navitem")
+    console.log(navItems);
 
     function closeBurgermenu() {
         navBurger.classList.add("hiddenMenu");
@@ -63,6 +51,14 @@ export default function navigation() {
         overlay.classList.remove("hiddenOverlay");
         burgerBtn.setAttribute("aria-expanded", true);
     }
+
+    navItems.forEach((item) => {
+        item.addEventListener('click', () => {
+            setTimeout(() => {
+                closeBurgermenu()
+            }, 390);
+        })
+    })
 
     burgerBtn.addEventListener("click", function () {
         openBurgermenu()

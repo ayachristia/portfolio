@@ -43,6 +43,7 @@
         border: 1px solid rgba(227, 204, 239, 0.185);
     }
     &__navItem{
+        cursor: pointer;
         font-size: clamp(.8rem, 3vw, 1rem);
         border: none;
         background: none;

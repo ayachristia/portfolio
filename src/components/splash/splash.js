@@ -25,12 +25,15 @@ export default function splash() {
 
     window.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
-            introItem.forEach((Item, index) => {
-                setTimeout(() => {
-                    //sender hvert bogstav ned til bottom 0
-                    Item.classList.add('active')
-                }, (index + 1) * 80)
-            }, 1250)
+            setTimeout(() => {
+                introItem.forEach((Item, index) => {
+                    setTimeout(() => {
+                        //sender hvert bogstav ned til bottom 0
+                        Item.classList.add('active')
+                    }, (index + 1) * 80)
+                }, 1280)
+
+            }, 470);
 
             // setTimeout(() => {
             //     // introItem.forEach((Item, index) => {
@@ -45,7 +48,7 @@ export default function splash() {
             setTimeout(() => {
                 introEl.style.bottom = '-100vh'
                 introEl.classList.add('fade')
-            }, 1300)
+            }, 1400)
 
         })
     })

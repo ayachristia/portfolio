@@ -26,11 +26,11 @@
         text-transform: uppercase;
         font-size: clamp(2.5rem, 2vw, 5rem);
         font-family: "Anta Regular";
-        // opacity: 0;
+        opacity: 0;
     }
     &__item.active{
         bottom: 0;
-        // opacity: 1;
+        opacity: 1;
         transition: ease-in-out 110ms;
     }
     &.fade{
