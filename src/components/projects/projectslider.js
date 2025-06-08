@@ -154,7 +154,7 @@ function initCarousel(carouselId) {
         return;
     }
 
-    console.log('Initializing carousel for', carouselId);
+    // console.log('Initializing carousel for', carouselId);
 
     // Selection of elements
     const track = sectionEl.querySelector('.scroll__track');
@@ -164,7 +164,7 @@ function initCarousel(carouselId) {
 
     // Store the original slides count 
     const slideCount = slides.length;
-    console.log('Found', slideCount, 'slides');
+    // console.log('Found', slideCount, 'slides');
 
     if (slideCount === 0) {
         console.error('No slides found');
@@ -186,28 +186,28 @@ function initCarousel(carouselId) {
 
     // Get updated slides after cloning
     const allSlides = sectionEl.querySelectorAll('.scroll__slide');
-    console.log('After cloning, found', allSlides.length, 'slides');
+    // console.log('After cloning, found', allSlides.length, 'slides');
 
     // Initialize with the original slides (not the clones)
     let slideIndex = slideCount; // Start at the first original slide
     let slideWidth = slides[0].offsetWidth;
-    console.log('Slide width:', slideWidth);
+    // console.log('Slide width:', slideWidth);
     let isTransitioning = false;
 
     // Position track at first slide
     function initPosition() {
-        console.log('Initializing position, index:', slideIndex, 'width:', slideWidth);
+        // console.log('Initializing position, index:', slideIndex, 'width:', slideWidth);
         track.style.transition = 'none';
         track.style.transform = `translateX(${-slideWidth * slideIndex}px)`;
         // Force reflow
         track.offsetHeight;
-        console.log('Initial transform:', track.style.transform);
+        // console.log('Initial transform:', track.style.transform);
     }
 
     function updatePosition() {
         console.log('Updating position to index:', slideIndex, 'width:', slideWidth);
         track.style.transform = `translateX(${-slideWidth * slideIndex}px)`;
-        console.log('New transform:', track.style.transform);
+        // console.log('New transform:', track.style.transform);
     }
 
     function handleResize() {
@@ -284,14 +284,14 @@ function initCarousel(carouselId) {
 
     // Add click handlers to buttons using only addEventListener
     if (prevBtn) {
-        console.log('Adding click handler to prev button');
+        // console.log('Adding click handler to prev button');
         prevBtn.addEventListener('click', prevSlide);
     } else {
         console.error('Prev button not found');
     }
 
     if (nextBtn) {
-        console.log('Adding click handler to next button');
+        // console.log('Adding click handler to next button');
         nextBtn.addEventListener('click', nextSlide);
     } else {
         console.error('Next button not found');
@@ -310,11 +310,68 @@ function initCarousel(carouselId) {
     }
 
     sectionEl.addEventListener('keydown', handleKeyDown);
+    // Pointer events (works for touch, mouse, pen)
+    let pointerStartX = 0;
+    let pointerStartY = 0;
+    let pointerStartTime = 0;
+    let hasMoved = false;
+
+    function handlePointerDown(e) {
+        // Only handle primary pointer (first finger/mouse)
+        if (!e.isPrimary) return;
+
+        pointerStartX = e.clientX;
+        pointerStartY = e.clientY;
+        pointerStartTime = Date.now();
+        hasMoved = false;
+
+        container.setPointerCapture(e.pointerId);
+    }
+
+    function handlePointerMove(e) {
+        if (!e.isPrimary) return;
+
+        const currentX = e.clientX;
+        const horizontalDiff = Math.abs(currentX - pointerStartX);
+
+        if (horizontalDiff > 15) {
+            hasMoved = true;
+            e.preventDefault(); // Prevent link activation during swipe
+        }
+    }
+
+    function handlePointerUp(e) {
+        if (!e.isPrimary) return;
+
+        const pointerEndX = e.clientX;
+        const pointerEndY = e.clientY;
+        const duration = Date.now() - pointerStartTime;
+
+        const horizontalDistance = pointerEndX - pointerStartX;
+        const verticalDistance = Math.abs(pointerEndY - pointerStartY);
+
+        // Only swipe if it was a deliberate horizontal gesture
+        if (hasMoved && Math.abs(horizontalDistance) > 50 && verticalDistance < 100 && duration < 500) {
+            if (horizontalDistance > 0) {
+                prevSlide(); // Swiped right
+            } else {
+                nextSlide(); // Swiped left
+            }
+        }
+
+        container.releasePointerCapture(e.pointerId);
+    }
+
+    // Remove all the touch/overlay code and use this instead:
+    const container = sectionEl.querySelector('.scroll__container');
+    container.addEventListener('pointerdown', handlePointerDown);
+    container.addEventListener('pointermove', handlePointerMove);
+    container.addEventListener('pointerup', handlePointerUp);
 
     // Handle resize
     window.addEventListener('resize', handleResize);
 
     // Initialize position
-    console.log('Initializing carousel position');
+    // console.log('Initializing carousel position');
     initPosition();
 }
