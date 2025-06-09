@@ -310,63 +310,6 @@ function initCarousel(carouselId) {
     }
 
     sectionEl.addEventListener('keydown', handleKeyDown);
-    // Pointer events (works for touch, mouse, pen)
-    let pointerStartX = 0;
-    let pointerStartY = 0;
-    let pointerStartTime = 0;
-    let hasMoved = false;
-
-    function handlePointerDown(e) {
-        // Only handle primary pointer (first finger/mouse)
-        if (!e.isPrimary) return;
-
-        pointerStartX = e.clientX;
-        pointerStartY = e.clientY;
-        pointerStartTime = Date.now();
-        hasMoved = false;
-
-        container.setPointerCapture(e.pointerId);
-    }
-
-    function handlePointerMove(e) {
-        if (!e.isPrimary) return;
-
-        const currentX = e.clientX;
-        const horizontalDiff = Math.abs(currentX - pointerStartX);
-
-        if (horizontalDiff > 15) {
-            hasMoved = true;
-            e.preventDefault(); // Prevent link activation during swipe
-        }
-    }
-
-    function handlePointerUp(e) {
-        if (!e.isPrimary) return;
-
-        const pointerEndX = e.clientX;
-        const pointerEndY = e.clientY;
-        const duration = Date.now() - pointerStartTime;
-
-        const horizontalDistance = pointerEndX - pointerStartX;
-        const verticalDistance = Math.abs(pointerEndY - pointerStartY);
-
-        // Only swipe if it was a deliberate horizontal gesture
-        if (hasMoved && Math.abs(horizontalDistance) > 50 && verticalDistance < 100 && duration < 500) {
-            if (horizontalDistance > 0) {
-                prevSlide(); // Swiped right
-            } else {
-                nextSlide(); // Swiped left
-            }
-        }
-
-        container.releasePointerCapture(e.pointerId);
-    }
-
-    // Remove all the touch/overlay code and use this instead:
-    const container = sectionEl.querySelector('.scroll__container');
-    container.addEventListener('pointerdown', handlePointerDown);
-    container.addEventListener('pointermove', handlePointerMove);
-    container.addEventListener('pointerup', handlePointerUp);
 
     // Handle resize
     window.addEventListener('resize', handleResize);
