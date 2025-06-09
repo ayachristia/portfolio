@@ -31,7 +31,7 @@
     &__item.active{
         bottom: 0;
         opacity: 1;
-        transition: ease-in-out 110ms;
+        transition: ease-in-out 250ms;
     }
     &.fade{
         top: unset;
